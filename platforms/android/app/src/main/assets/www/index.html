@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Catamaran|ABeeZee|Titillium+Web|Rubik|Ubuntu" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="app">
+            <h1>Tela de Login</h1>
+            <form id="formulario" class="box" method="post">
+            <h1>Tela de Login</h1>
+            <input type="text" name="" placeholder="Apelido" id="apelido">
+            <input type="password" name="" placeholder="Senha" id="senha">
+            <input type="submit" value="Enviar">
+</form>
+
+             <script>
+                                  var form = document.getElementById("formulario");
+                                  var apelido = document.getElementById("apelido");
+                                  var senha = document.getElementById("senha");
+
+                                    form.addEventListener("submit", function(e) {
+                                        // alerta o valor do campo
+                                        alert(apelido.value);
+                                        alert(senha.value);
+										alert('Cadastro Concluído Com Sucesso!');
+
+                                        // impede o envio do form
+                                        e.preventDefault();
+                });
+                        </script>
+                  
+        </div>
+
+
+        
+    </body>
+</html>
